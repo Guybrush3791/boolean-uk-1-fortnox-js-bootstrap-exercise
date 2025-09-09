@@ -1,0 +1,22 @@
+{
+  "name": "boolean-uk-1-js-bootstrap-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "sass src/scss/custom.scss dist/css/custom.css --style=compressed",
+    "watch:css": "npx sass --watch src/scss/custom.scss dist/css/custom.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="p-3">
+
+  <!-- buttons -->
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-outline-secondary">Outline</button>
+  <button class="btn btn-danger btn-sm">Small</button>
+
+  <hr>
+
+  <!-- Alerts -->
+  <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+    <strong>Heads up!</strong> This is a warning alert.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <hr>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-success">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <hr>
+
+  <!-- Cards -->
+  <div class="card" style="width: 18rem;">
+    <img src="https://picsum.photos/288/160" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Quick example text.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item active">Active item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item disabled">Disabled item</li>
+  </ul>
+
+  <hr>
+
+  <!-- Dropdown -->
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Something else</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Library</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Data</li>
+    </ol>
+  </nav>
+
+  <hr>
+
+  <!-- Pagination -->
+  <nav>
+    <ul class="pagination">
+      <li class="page-item disabled"><span class="page-link">Previous</span></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><span class="page-link">2</span></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+
+  <hr>
+
+  <!-- Modal trigger + Modal -->
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Open Modal</button>
+  <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog"><div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">Hello from the modal!</div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div></div>
+  </div>
+
+  <hr>
+
+  <!-- Accordion -->
+  <div class="accordion" id="acc">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#c1">Item 1</button>
+      </h2>
+      <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#acc">
+        <div class="accordion-body">Content 1</div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#profile">Profile</a></li>
+  </ul>
+  <div class="tab-content border-start border-end border-bottom p-3">
+    <div id="home" class="tab-pane fade show active">Home content</div>
+    <div id="profile" class="tab-pane fade">Profile content</div>
+  </div>
+
+  <hr>
+
+  <!-- Form + Input group -->
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="name@example.com">
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" placeholder="••••••••">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="remember">
+        <label class="form-check-label" for="remember">Remember me</label>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="username">
+        <button class="btn btn-outline-secondary" type="button">Go</button>
+      </div>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+  <hr>
+
+  <!-- Badges -->
+  <h1>Inbox <span class="badge bg-secondary">4</span></h1>
+  <button class="btn btn-primary">
+    Notifications <span class="badge bg-light text-dark">3</span>
+  </button>
+
+  <hr>
+
+  <!-- Toast -->
+  <div class="toast align-items-center show" role="alert">
+    <div class="d-flex">
+      <div class="toast-body">Hello, world! This is a toast message.</div>
+      <button class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Progress -->
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;">60%</div>
+  </div>
+
+  <hr>
+
+  <!-- Spinners -->
+  <div class="spinner-border text-primary" role="status" aria-label="loading"></div>
+  <div class="spinner-grow text-success" role="status" aria-label="loading"></div>
+
+  <hr>
+
+  <!-- Offcanvas -->
+  <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#off">Open menu</button>
+  <div class="offcanvas offcanvas-start" id="off" tabindex="-1">
+    <div class="offcanvas-header">
+      <h5>Menu</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">Links and content here</div>
+  </div>
+
+  <hr>
+
+  <!-- Grid -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">Main</div>
+      <div class="col-md-4">Sidebar</div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
