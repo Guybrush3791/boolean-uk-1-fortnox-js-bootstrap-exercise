@@ -1,7 +1,7 @@
 $spacer: 1rem;
 $spacers: (0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3);
 
-$primary: #6f42c1; $body-bg: #101010; $body-color: #cfd8dc;
+$primary: #000000; $body-bg: #ffffff; $body-color: #000000; // !important
 $theme-colors: ( "primary": #6f42c1, "success": #1db954 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
